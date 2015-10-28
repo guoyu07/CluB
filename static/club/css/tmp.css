@@ -1,0 +1,110 @@
+.post-head{
+    width: 5%;
+    height: 5%;
+}
+.main_left_index {
+    width: 750px;
+}
+.items_con {
+    width: 100%;
+}
+.item_con {
+    width: 100%;
+    border-top: 1px solid #eee;
+    padding: 15px 0;
+}
+.item_left {
+    width: 10%;
+}
+.item_avatar {
+    margin: 11px 15px;
+    background: #ccc;
+    width: 50px;
+    height: 50px;
+    border-radius: 51px;
+}
+.item_main {
+    width: 80%;
+}
+.item_title {
+    display: block;
+    font-size: 16px;
+    color: #888;
+    margin: 10px 15px;
+    font-style: bold;
+    text-decoration: none;
+}
+.item_title:hover {
+    color: #666;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.item_hot_comment_div {
+    color: #aaa;
+    font-size: 14px;
+    margin: 10px 15px;
+}
+.item_hot_comment {
+    display: inline;
+    line-height: 150%;
+}
+.item_hot_comment_scale {
+    display: none;
+    font-size: 12px;
+    color: #6CA005;
+    padding: 3px 5px;
+}
+.item_hot_comment_scale:hover {
+    background: #eee;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.item_info {
+    color: #bbb;
+    float: right;
+    margin-right: 15px;
+}
+.item_user, .item_latest_user, #item_user, #item_latest_user {
+    text-decoration: none;
+    color: #999;
+}
+.item_user:hover, .item_latest_user:hover, #item_user:hover, #item_latest_user:hover {
+    color: #555;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.item_right {
+    width: 10%;
+}
+.item_right .item_comments_count,.item_comments_count{
+    float: right;
+    color: white;
+    background: #969cb1;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.item_comments_count:hover {
+    background: #747a90;
+}
+.item_more {
+    display: block;
+    color: #aaa;
+    width: 500px;
+    background: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    margin: 15px auto 5px auto;
+    cursor: pointer;
+}
+.main_right {
+    width: 230px;
+    float: right;
+    margin: 15px 0 0 0;
+}
+.accordion_title {
+    margin: 0;
+}

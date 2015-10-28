@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--手机-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GameClub|游戏圈子</title>
+
+    <!--第三方-->
+    <link rel="stylesheet" href="../static/bootstrap/bootstrap.min.css">
+
+    <script src="../static/jQuery/jquery-2.1.4.min.js"></script>
+    <script src="../static/bootstrap/bootstrap.min.js"></script>
+
+    <!--my-->
+    <link rel="stylesheet" href="../static/club/css/blog.css">
+
+    <script src="../static/club/js/"></script>
+
+</head>
+<body>
+
+<!--头部导航-->
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my_navbar_collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">GameClub|游戏圈子</a>
+        </div>
+        <div class="collapse navbar-collapse" id="my_navbar_collapse">
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">检索</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#">首页</a>
+                </li>
+                <li>
+                    <a href="#">圈子</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-collapse">
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--提示登录-->
+<div class="jumbotron tips-reg-login hidden-xs">
+    <div class="container">
+        <h2>专注北三一万年</h2>
+        <p class="tips-website-brief" >享受游戏人生  ||  GameClub Not GayClub</p>
+        <button class="btn btn-primary" data-toggle="">登陆</button>
+        <button class="btn btn-primary">注册</button>
+
+    </div>
+</div>
+
+<!--登陆注册弹出页面-->
+
+<div id="dia-login" title="Game友登陆">
+    <form class="dia-login-form">
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button type="submit" id="login-button">登陆</button>
+    </form>
+</div>
+
+<!--页面内容-->
+<div class="container">
+    <div class="article col-md-8 col-sm-8">
+        <div class="tab-content">
+            <div class="items-con-new">
+                <!--单条信息-->
+                <table class="items-con">
+                    <tbody>
+                    <tr>
+                        <td class="item-left">
+                            <a class="item-avatar-a">
+                                <img class="show-toolkit item-avatar" src="" alt="">
+                            </a>
+                        </td>
+                        <td class="item-main">
+                            <a class="item-title" target="_blank">约战</a>
+                            <div class="hidden-xs">
+                                <div class="item-hot-comment-div">
+                                    <div class="item-hot-comment">守望先锋我来战~\(≧▽≦)/~</div>
+                                    <span class="item-hot-comment-scale">显示全部</span>
+                                </div>
+                                <span class="item-info">
+                                    <a class="show-toolkit item-user"><!--发布用户--></a>
+                                    &nbsp;•&nbsp;
+                                    <span class="item-date"><!--发布时间--></span>
+                                    <span class="lastest-comment-info">
+                                        &nbsp;•&nbsp; 最新回复来自
+                                        <a class="show-toolkit item-latest-user" >
+                                            <!-- 最新回复用户 -->
+                                        </a>
+                                    </span>
+                                </span>
+                            </div>
+                        </td>
+                        <td class="item-right">
+                            <a class="item-comments-count item-comments-count-a" href="">0</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <hr class="table_line">
+                <table class="items-con">
+                    <tbody>
+                    <tr>
+                        <td class="item-left">
+                            <a class="item-avatar-a">
+                                <img class="show-toolkit item-avatar" src="" alt="">
+                            </a>
+                        </td>
+                        <td class="item-main">
+                            <a class="item-title" target="_blank">约战</a>
+                            <div class="hidden-xs">
+                                <div class="item-hot-comment-div">
+                                    <div class="item-hot-comment">守望先锋我来战~\(≧▽≦)/~</div>
+                                    <span class="item-hot-comment-scale">显示全部</span>
+                                </div>
+                                <span class="item-info">
+                                    <a class="show-toolkit item-user"><!--发布用户--></a>
+                                    &nbsp;•&nbsp;
+                                    <span class="item-date"><!--发布时间--></span>
+                                    <span class="lastest-comment-info">
+                                        &nbsp;•&nbsp; 最新回复来自
+                                        <a class="show-toolkit item-latest-user" >
+                                            <!-- 最新回复用户 -->
+                                        </a>
+                                    </span>
+                                </span>
+                            </div>
+                        </td>
+                        <td class="item-right">
+                            <a class="item-comments-count item-comments-count-a" href="">0</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <hr class="table_line">
+                <table class="items-con">
+                    <tbody>
+                    <tr>
+                        <td class="item-left">
+                            <a class="item-avatar-a">
+                                <img class="show-toolkit item-avatar" src="" alt="">
+                            </a>
+                        </td>
+                        <td class="item-main">
+                            <a class="item-title" target="_blank">约战</a>
+                            <div class="hidden-xs">
+                                <div class="item-hot-comment-div">
+                                    <div class="item-hot-comment">守望先锋我来战~\(≧▽≦)/~</div>
+                                    <span class="item-hot-comment-scale">显示全部</span>
+                                </div>
+                                <span class="item-info">
+                                    <a class="show-toolkit item-user"><!--发布用户--></a>
+                                    &nbsp;•&nbsp;
+                                    <span class="item-date"><!--发布时间--></span>
+                                    <span class="lastest-comment-info">
+                                        &nbsp;•&nbsp; 最新回复来自
+                                        <a class="show-toolkit item-latest-user" >
+                                            <!-- 最新回复用户 -->
+                                        </a>
+                                    </span>
+                                </span>
+                            </div>
+                        </td>
+                        <td class="item-right">
+                            <a class="item-comments-count item-comments-count-a" href="">0</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <hr class="table_line">
+                <table class="items-con">
+                    <tbody>
+                    <tr>
+                        <td class="item-left">
+                            <a class="item-avatar-a">
+                                <img class="show-toolkit item-avatar" src="" alt="">
+                            </a>
+                        </td>
+                        <td class="item-main">
+                            <a class="item-title" target="_blank">约战</a>
+                            <div class="hidden-xs">
+                                <div class="item-hot-comment-div">
+                                    <div class="item-hot-comment">守望先锋我来战~\(≧▽≦)/~</div>
+                                    <span class="item-hot-comment-scale">显示全部</span>
+                                </div>
+                                <span class="item-info">
+                                    <a class="show-toolkit item-user"><!--发布用户--></a>
+                                    &nbsp;•&nbsp;
+                                    <span class="item-date"><!--发布时间--></span>
+                                    <span class="lastest-comment-info">
+                                        &nbsp;•&nbsp; 最新回复来自
+                                        <a class="show-toolkit item-latest-user" >
+                                            <!-- 最新回复用户 -->
+                                        </a>
+                                    </span>
+                                </span>
+                            </div>
+                        </td>
+                        <td class="item-right">
+                            <a class="item-comments-count item-comments-count-a" href="">0</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <hr class="table_line">
+                <table class="items-con">
+                    <tbody>
+                    <tr>
+                        <td class="item-left">
+                            <a class="item-avatar-a">
+                                <img class="show-toolkit item-avatar" src="" alt="">
+                            </a>
+                        </td>
+                        <td class="item-main">
+                            <a class="item-title" target="_blank">约战</a>
+                            <div class="hidden-xs">
+                                <div class="item-hot-comment-div">
+                                    <div class="item-hot-comment">守望先锋我来战~\(≧▽≦)/~</div>
+                                    <span class="item-hot-comment-scale">显示全部</span>
+                                </div>
+                                <span class="item-info">
+                                    <a class="show-toolkit item-user"><!--发布用户--></a>
+                                    &nbsp;•&nbsp;
+                                    <span class="item-date"><!--发布时间--></span>
+                                    <span class="lastest-comment-info">
+                                        &nbsp;•&nbsp; 最新回复来自
+                                        <a class="show-toolkit item-latest-user" >
+                                            <!-- 最新回复用户 -->
+                                        </a>
+                                    </span>
+                                </span>
+                            </div>
+                        </td>
+                        <td class="item-right">
+                            <a class="item-comments-count item-comments-count-a" href="">0</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <hr class="table_line">
+                <table class="items-con">
+                    <tbody>
+                    <tr>
+                        <td class="item-left">
+                            <a class="item-avatar-a">
+                                <img class="show-toolkit item-avatar" src="" alt="">
+                            </a>
+                        </td>
+                        <td class="item-main">
+                            <a class="item-title" target="_blank">约战</a>
+                            <div class="hidden-xs">
+                                <div class="item-hot-comment-div">
+                                    <div class="item-hot-comment">守望先锋我来战~\(≧▽≦)/~</div>
+                                    <span class="item-hot-comment-scale">显示全部</span>
+                                </div>
+                                <span class="item-info">
+                                    <a class="show-toolkit item-user"><!--发布用户--></a>
+                                    &nbsp;•&nbsp;
+                                    <span class="item-date"><!--发布时间--></span>
+                                    <span class="lastest-comment-info">
+                                        &nbsp;•&nbsp; 最新回复来自
+                                        <a class="show-toolkit item-latest-user" >
+                                            <!-- 最新回复用户 -->
+                                        </a>
+                                    </span>
+                                </span>
+                            </div>
+                        </td>
+                        <td class="item-right">
+                            <a class="item-comments-count item-comments-count-a" href="">0</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <hr class="table_line">
+                <table class="items-con">
+                    <tbody>
+                    <tr>
+                        <td class="item-left">
+                            <a class="item-avatar-a">
+                                <img class="show-toolkit item-avatar" src="" alt="">
+                            </a>
+                        </td>
+                        <td class="item-main">
+                            <a class="item-title" target="_blank">约战</a>
+                            <div class="hidden-xs">
+                                <div class="item-hot-comment-div">
+                                    <div class="item-hot-comment">守望先锋我来战~\(≧▽≦)/~</div>
+                                    <span class="item-hot-comment-scale">显示全部</span>
+                                </div>
+                                <span class="item-info">
+                                    <a class="show-toolkit item-user"><!--发布用户--></a>
+                                    &nbsp;•&nbsp;
+                                    <span class="item-date"><!--发布时间--></span>
+                                    <span class="lastest-comment-info">
+                                        &nbsp;•&nbsp; 最新回复来自
+                                        <a class="show-toolkit item-latest-user" >
+                                            <!-- 最新回复用户 -->
+                                        </a>
+                                    </span>
+                                </span>
+                            </div>
+                        </td>
+                        <td class="item-right">
+                            <a class="item-comments-count item-comments-count-a" href="">0</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <hr class="table_line">
+                <table class="items-con">
+                    <tbody>
+                    <tr>
+                        <td class="item-left">
+                            <a class="item-avatar-a">
+                                <img class="show-toolkit item-avatar" src="" alt="">
+                            </a>
+                        </td>
+                        <td class="item-main">
+                            <a class="item-title" target="_blank">约战</a>
+                            <div class="hidden-xs">
+                                <div class="item-hot-comment-div">
+                                    <div class="item-hot-comment">守望先锋我来战~\(≧▽≦)/~</div>
+                                    <span class="item-hot-comment-scale">显示全部</span>
+                                </div>
+                                <span class="item-info">
+                                    <a class="show-toolkit item-user"><!--发布用户--></a>
+                                    &nbsp;•&nbsp;
+                                    <span class="item-date"><!--发布时间--></span>
+                                    <span class="lastest-comment-info">
+                                        &nbsp;•&nbsp; 最新回复来自
+                                        <a class="show-toolkit item-latest-user">
+                                            <!-- 最新回复用户 -->
+                                        </a>
+                                    </span>
+                                </span>
+                            </div>
+                        </td>
+                        <td class="item-right">
+                            <a class="item-comments-count item-comments-count-a" href="">0</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <hr class="table_line">
+                <table class="items-con">
+                    <tbody>
+                    <tr>
+                        <td class="item-left">
+                            <a class="item-avatar-a">
+                                <img class="show-toolkit item-avatar" src="" alt="">
+                            </a>
+                        </td>
+                        <td class="item-main">
+                            <a class="item-title" target="_blank">约战</a>
+                            <div class="hidden-xs">
+                                <div class="item-hot-comment-div">
+                                    <div class="item-hot-comment">守望先锋我来战~\(≧▽≦)/~</div>
+                                    <span class="item-hot-comment-scale">显示全部</span>
+                                </div>
+                                <span class="item-info">
+                                    <a class="show-toolkit item-user"><!--发布用户--></a>
+                                    &nbsp;•&nbsp;
+                                    <span class="item-date"><!--发布时间--></span>
+                                    <span class="lastest-comment-info">
+                                        &nbsp;•&nbsp; 最新回复来自
+                                        <a class="show-toolkit item-latest-user" id="item-latest-user">
+                                            <!-- 最新回复用户 -->
+                                        </a>
+                                    </span>
+                                </span>
+                            </div>
+                        </td>
+                        <td class="item-right">
+                            <a class="item-comments-count item-comments-count-a" href="">0</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div id="item-more-new" class="item-more">
+                <!--<i id="spinner-gray-new" class="spinner-gray"></i>-->
+                <span>加载更多O(∩_∩)O~</span>
+            </div>
+        </div>
+    </div>
+    <div class="right_index col-md-4 col-sm-4 hidden-xs">
+        <!--<div class="tab-content">-->
+            <!--<div class="items-con">-->
+                <!--<div class="items-con">-->
+
+                    <!--<div>-->
+                        <!--<h4 class="side-nav-title-left" >推荐用户</h4>-->
+                        <!--<a class="item-title side-nav-title-right">更多推荐»</a>-->
+                    <!--</div>-->
+                    <!--<div>-->
+                        <!--<ul class="user-recommand">-->
+                            <!--<li class="user-recommand-list">用户1</li>-->
+                            <!--<li class="user-recommand-list">用户1</li>-->
+                            <!--<li class="user-recommand-list">用户1</li>-->
+                            <!--<li class="user-recommand-list">用户1</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+                <!--<hr class="table-line"><br/>-->
+                <!--<table class="items-con">-->
+                    <!--<h4 class="side-nav-title-left" >热门游戏圈</h4>-->
+                    <!--<a class="item-title side-nav-title-right">更多推荐»</a>-->
+                <!--</table>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="tab-content">
+            <h3 class="side-nav-title">推荐用户<a href="" class="item-title side-nav-title-right">更多推荐 »</a></h3>
+            <div class="user-recommand-list-div" >
+                <ul class="user-recommand-list">
+                    <li>
+                        <a href="#" data-tip="s$r$不感兴趣" class="del">
+                            <i class="icon icon-ignore"></i>
+                        </a>
+                        <a href="" class="avatar">
+                            <img src="">
+                        </a>
+                        <div class="user-recommand-bd">
+                            <a href="">李启成</a>
+                            <div class="headline">
+                                <span title="个人主页：lqczzz.cc">微信：q794058798</span>
+                            </div>
+                            <div class="ft">
+                                <span class="reason"><a href="">谢熊猫君</a> 等 7 人也关注了他</span>
+                                <span class="zg-bull">•</span>
+                                <a class="zg-follow follow" href="#" >关注</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" data-tip="s$r$不感兴趣" class="del">
+                            <i class="icon icon-ignore"></i>
+                        </a>
+                        <a href="" class="avatar">
+                            <img src="">
+                        </a>
+                        <div class="user-recommand-bd">
+                            <a href="">李启成</a>
+                            <div class="headline">
+                                <span title="个人主页：lqczzz.cc">微信：q794058798</span>
+                            </div>
+                            <div class="ft">
+                                <span class="reason"><a href="">谢熊猫君</a> 等 7 人也关注了他</span>
+                                <span class="zg-bull">•</span>
+                                <a class="zg-follow follow" href="#" >关注</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" data-tip="s$r$不感兴趣" class="del">
+                            <i class="icon icon-ignore"></i>
+                        </a>
+                        <a href="" class="avatar">
+                            <img src="">
+                        </a>
+                        <div class="user-recommand-bd">
+                            <a href="">李启成</a>
+                            <div class="headline">
+                                <span title="个人主页：lqczzz.cc">微信：q794058798</span>
+                            </div>
+                            <div class="ft">
+                                <span class="reason"><a href="">谢熊猫君</a> 等 7 人也关注了他</span>
+                                <span class="zg-bull">•</span>
+                                <a class="zg-follow follow" href="#" >关注</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" data-tip="s$r$不感兴趣" class="del">
+                            <i class="icon icon-ignore"></i>
+                        </a>
+                        <a href="" class="avatar">
+                            <img src="">
+                        </a>
+                        <div class="user-recommand-bd">
+                            <a href="">李启成</a>
+                            <div class="headline">
+                                <span title="个人主页：lqczzz.cc">微信：q794058798</span>
+                            </div>
+                            <div class="ft">
+                                <span class="reason"><a href="">谢熊猫君</a> 等 7 人也关注了他</span>
+                                <span class="zg-bull">•</span>
+                                <a class="zg-follow follow" href="#" >关注</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content">
+            <h3 class="side-nav-title">热门游戏圈<a href="" class="item-title side-nav-title-right">更多推荐 »</a></h3>
+            <div class="user-recommand-list-div" >
+                <ul class="user-recommand-list">
+                    <li>
+                        <a href="#" data-tip="s$r$不感兴趣" class="del">
+                            <i class="icon icon-ignore"></i>
+                        </a>
+                        <a href="" class="avatar">
+                            <img src="">
+                        </a>
+                        <div class="user-recommand-bd">
+                            <a href="">李启成</a>
+                            <div class="headline">
+                                <span title="个人主页：lqczzz.cc">微信：q794058798</span>
+                            </div>
+                            <div class="ft">
+                                <span class="reason"><a href="">谢熊猫君</a> 等 7 人也关注了他</span>
+                                <span class="zg-bull">•</span>
+                                <a class="zg-follow follow" href="#" >关注</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" data-tip="s$r$不感兴趣" class="del">
+                            <i class="icon icon-ignore"></i>
+                        </a>
+                        <a href="" class="avatar">
+                            <img src="">
+                        </a>
+                        <div class="user-recommand-bd">
+                            <a href="">李启成</a>
+                            <div class="headline">
+                                <span title="个人主页：lqczzz.cc">微信：q794058798</span>
+                            </div>
+                            <div class="ft">
+                                <span class="reason"><a href="">谢熊猫君</a> 等 7 人也关注了他</span>
+                                <span class="zg-bull">•</span>
+                                <a class="zg-follow follow" href="#" >关注</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" data-tip="s$r$不感兴趣" class="del">
+                            <i class="icon icon-ignore"></i>
+                        </a>
+                        <a href="" class="avatar">
+                            <img src="">
+                        </a>
+                        <div class="user-recommand-bd">
+                            <a href="">李启成</a>
+                            <div class="headline">
+                                <span title="个人主页：lqczzz.cc">微信：q794058798</span>
+                            </div>
+                            <div class="ft">
+                                <span class="reason"><a href="">谢熊猫君</a> 等 7 人也关注了他</span>
+                                <span class="zg-bull">•</span>
+                                <a class="zg-follow follow" href="#" >关注</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--页脚-->
+
+        <div>
+            <p class="text-center">&copy; Company 2015</p>
+            <p class="text-center">逗比站长:lqczzz</p>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
+
+
+

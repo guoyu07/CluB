@@ -1,0 +1,140 @@
+/*全局*/
+
+body{
+    border: 0;
+    padding: 0px;
+    outline: none;
+    font-size: 14px;
+}
+.header_search {
+    float: right;
+    margin-left: 20px;
+}
+ul{
+   list-style-type: none;
+}
+
+/*提示框*/
+/*.tips-website-brief{*/
+    /*float: left;*/
+/*}*/
+
+/*内容*/
+.items-con{
+    width: 100%;
+}
+.item-left{
+    width: 10%;
+}
+.item-main{
+    width: 80%;
+}
+.item-right{
+    width: 10%;
+}
+.item-avatar-a{
+    display: block;
+}
+.item-avatar{
+    margin: 11px 15px;
+    background: #ccc;
+    width: 50px;
+    height: 50px;
+    border-radius: 51px;
+}
+.item-title{
+    display: block;
+    font-size: 16px;
+    color: #888;
+    margin: 10px 15px;
+    text-decoration: none;
+}
+.item-title:hover{
+    color: #666;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.item-hot-comment-div{
+    color: #aaa;
+    font-size: 14px;
+    margin: 10px 15px;
+}
+.item-hot-comment{
+    display: inline;
+    line-height: 150%;
+}
+.item-hot-comment-scale{
+    display: none;
+    font-size: 12px;
+    color: #6CA005;
+    padding: 3px 5px;
+}
+.item-hot-comment-scale:hover{
+    background: #eee;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.item-info{
+    color: #bbb;
+    float: right;
+    margin-right: 15px;
+}
+.item-user, .item-latest-user{
+    text-decoration: none;
+    color: #999;
+}
+.item-user:hover, .item-latest-user:hover{
+    color: #555;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.item-right .item-comments-count,.item-comments-count{
+    float: right;
+    color: white;
+    background: #969cb1;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.item-comments-count:hover {
+    background: #747a90;
+}
+.item-more{
+    display: block;
+    color: #aaa;
+    width: 500px;
+    background: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    margin: 15px auto 5px auto;
+    cursor: pointer;
+}
+.table-line{
+    height: 2px;
+    border: none;
+    border-top: 1px;
+    dashed:#0066cc;
+}
+
+/*边上的导航*/
+.side-nav-title-left{
+    float: left;
+}
+.side-nav-title-right{
+    float: right;
+}
+.user-recommand{
+
+}
+.user-recommand-list{
+
+}
+/*注脚*/
+/*footer{*/
+    /*position: absolute;*/
+    /*bottom: 0;*/
+/*}*/
