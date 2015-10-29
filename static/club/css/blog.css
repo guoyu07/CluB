@@ -5,6 +5,7 @@ body{
     padding: 0px;
     outline: none;
     font-size: 14px;
+    position: relative;
 }
 .header_search {
     float: right;
@@ -15,9 +16,7 @@ ul{
 }
 
 /*提示框*/
-/*.tips-website-brief{*/
-    /*float: left;*/
-/*}*/
+
 
 /*内容*/
 .items-con{
@@ -133,8 +132,98 @@ ul{
 .user-recommand-list{
 
 }
-/*注脚*/
-/*footer{*/
-    /*position: absolute;*/
-    /*bottom: 0;*/
-/*}*/
+/*弹出的登录&&注册框*/
+
+#dia-login{
+    display: none;
+}
+#dia-reg{
+    display: none;
+}
+.log-reg-container{
+    text-align: center;
+    /*max-width:500px;*/
+    margin: 0px 0px 20px 0px ;
+    padding: 80px 0px;
+    /*height: 400px;*/
+
+    background-color: #53868B;
+}
+.log-reg-container h1{
+    font-size: 40px;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    font-weight: 200;
+}
+.log-reg-container-div{
+    font-size: 12px;
+    /*width: 250px;*/
+    /*text-align: center;*/
+    /*color: white;*/
+    position: relative;
+}
+.log-reg-container-div a{
+    color: white;
+    left:0 ;
+}
+.log-reg-form{
+
+    padding: 20px 0 0 15px;
+    position: relative;
+}
+.log-reg-form input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    outline: 0;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 250px;
+    border-radius:3px ;
+    padding: 10px 15px;
+    margin: 0 auto 10px auto;
+    display: block;
+    text-align:center ;
+    font-size: 15px;
+    color: white;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    font-weight: 300;
+}
+.log-reg-form input:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    /*background-color: #5CACEE;*/
+}
+.log-reg-form input:focus{
+    background-color: white;
+    /*background-color: #63B8ff;*/
+    width: 300px;
+    color:#53e3a6;
+}
+.log-reg-form button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    background-color: white;
+    border:0 ;
+    padding: 10px 15px;
+    color: #53e3a6;
+    border-radius: 3px;
+    width: 250px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+.log-reg-form button:hover{
+    background-color: #f5f7f9;
+}
+
+/*右边导航*/
+.right-nav{
+
+}
