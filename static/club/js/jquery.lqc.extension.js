@@ -5,13 +5,17 @@
 
 函数(全局变量不介绍)      功能
  lqcGetUrlParam        获取get请求地址栏的参数
-
-
-
-
+ showLoadDialog        加载提示窗口
+ showOKDialog          成功提示窗口
+ showErrorDialog       出错提示窗口
+ getTimeBySQL          计算距离现在的时间
+ showGroupsInfo        加载用户所在圈子信息
 */
 (function($){
     //定义全局变量
+
+    //背景图片的个数
+    $.LQC_BACKGROUNDS_COUNT = 12;
     //config
     //每次加载帖子个数
     $.LQC_POST_LOAD_COUNT = 5;
@@ -60,5 +64,60 @@
             if(len==2) func();
         }, 1000)
     }
+
+    // 从MySql的DATETIME计算距离现在的时间
+    $.getTimeBySQL = function (date) {
+        date = Date(date);
+        now = new Date();
+        time = '';
+        if((now-date)/60000<60){
+            time = Math.floor((now-date)/60000)+'分钟';
+        }else if((now-date)/(60000*60)<24){
+            time = Math.floor((now-date)/(60000*60))+'小时';
+        }else{
+            time = Math.floor((now-date)/(60000*60*24))+'天';
+        }
+        return time + '前';
+
+    }
+    /** 加载用户所在的圈子信息
+    * @p1 用户ID
+    * @p2
+    * */
+    $.showGroupsInfo = function (user_id, appendToWhat) {
+        $.ajax({
+            url:'',
+            type:'POST',
+            data:{
+                id:user_id
+            },
+        })
+            .done(function (response) {
+                json = eval("("+response+")");
+                //由于json是以”{}”的方式来开始以及结束的，
+                //在JS中，它会被当成一个语句块来处理，所以
+                //必须强制性的将它转换成一种表达式
+                $.each(json, function(index, val){
+                    item = $('<a class="show-toolkit group-item"></a>');
+                    item.attr('group-id', val.id);
+                    item.attr('href', "..."+val.id);
+                    item.html(val.name);
+                    item.appendTo(appendToWhat)
+                });
+                $.updateShowToolKit();
+            })
+    }
+
+    //初始化ajax
+    $.ajaxSetup({
+        type:'POST'
+    });
+
+    //生成图片url
+    $.getRandomImageUrl=function(){
+        //console.log("hha");
+        return "url(../static/image/background/main_bg_" + parseInt(Math.random() * $.LQC_BACKGROUNDS_COUNT) + ".jpg)";
+    };
+
 })(jQuery);
 
